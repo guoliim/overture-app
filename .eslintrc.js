@@ -43,5 +43,6 @@ module.exports = {
             { "vars": "all", "args": "none", "ignoreRestSiblings": false }
         ],
         "arrow-parens": ["error", "always"],
+        "@typescript-eslint/explicit-module-boundary-types": "off"
     }
 };
