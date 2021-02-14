@@ -1,8 +1,9 @@
 import Layout from '../components/Layout'
+import HomeContainer from './Home'
 
 const Home = () => (
     <Layout>
-        <div>test</div>
+        <HomeContainer />
     </Layout>
 )
 
