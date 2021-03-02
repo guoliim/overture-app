@@ -10,7 +10,9 @@
     "format": "./node_modules/.bin/prettier --write pages components"
   },
   "dependencies": {
+    "@guoliim/react-echarts": "^0.0.13",
     "autoprefixer": "^10.2.4",
+    "echarts": "^5.0.2",
     "next": "10.0.6",
     "postcss": "^8.2.4",
     "react": "17.0.1",

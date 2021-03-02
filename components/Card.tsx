@@ -1,4 +1,4 @@
-const Card = ({ type, children }: { type: 'sm' | 'md'; children: JSX.Element }) => (
+const Card = ({ type, className, children }: { type: 'sm' | 'md'; className?: string; children: JSX.Element }) => (
     <div
         className={`${((type) => {
             if (type === 'sm') {
@@ -8,7 +8,7 @@ const Card = ({ type, children }: { type: 'sm' | 'md'; children: JSX.Element }) 
             if (type === 'md') {
                 return 'rounded-sl'
             }
-        })(type)} bg-white`}
+        })(type)} bg-white ${className}`}
     >
         {children}
     </div>
