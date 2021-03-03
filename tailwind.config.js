@@ -19,6 +19,8 @@ module.exports = {
                 background: '#f5f5f7',
                 title: '#000',
                 'normal-text': '#3d3d3d',
+                'primary-query': '#007AFF',
+                'alternative-query': '#5AC8FA',
             },
             screens: {
                 'sxl': '1200px',

@@ -18,6 +18,33 @@ const Chart = () => {
                                     backgroundColor: '#6a7985',
                                 },
                             },
+                            padding: 20,
+                            formatter: (params) => {
+                                console.log('params', params)
+
+                                return `
+                                    <div>
+                                        <div class="mb-2">
+                                            <span class="text-title font-bold"> ${params[0].name} </span>
+                                        </div>
+                                        <div class="my-2">
+                                            <span class="text-primary-query font-semibold"> ${params[0].value} </span>
+                                            <span class=" text-gray-500"> primary queries </span>
+                                        </div>
+                                        <div class="mt-2">
+                                            <span 
+                                                class="
+                                                    text-alternative-query 
+                                                    font-semibold"
+                                            > 
+                                                ${params[1].value} 
+                                            </span>
+                                            <span class=" text-gray-500"> alternative queries </span>
+                                        </div>
+                                    <div>
+                                `
+                            },
+                            extraCssText: 'border-radius: 4px; box-shadow: none; border: 1px solid #D1D5DB',
                         },
                         grid: {
                             top: 0,
@@ -53,13 +80,19 @@ const Chart = () => {
                                 showSymbol: false,
                                 areaStyle: {
                                     color: 'rgba(90, 200, 250, 0.4)',
+                                    opacity: 1,
                                 },
                                 data: [140, 232, 101, 264, 90, 340, 250],
                                 silent: true,
                                 animation: false,
                                 emphasis: {
-                                    scale: false,
                                     focus: 'none',
+                                    lineStyle: {
+                                        opacity: 0,
+                                    },
+                                    areaStyle: {
+                                        opacity: 1,
+                                    },
                                 },
                             },
                             {
@@ -74,13 +107,19 @@ const Chart = () => {
                                 showSymbol: false,
                                 areaStyle: {
                                     color: 'rgba(0,122,255,0.25)',
+                                    opacity: 1,
                                 },
                                 data: [120, 282, 111, 234, 220, 340, 310],
                                 silent: true,
                                 animation: false,
                                 emphasis: {
-                                    scale: false,
                                     focus: 'none',
+                                    lineStyle: {
+                                        opacity: 0,
+                                    },
+                                    areaStyle: {
+                                        opacity: 1,
+                                    },
                                 },
                             },
                         ],
