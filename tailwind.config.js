@@ -8,11 +8,13 @@ module.exports = {
         },
         extend: {
             spacing: {
+                '0.25': '0.0625rem',
                 '1.5': '0.375rem',
                 '2.5': '0.625rem',
                 '28.5': '7.125rem',
                 '53.5': '13.375rem',
                 '87.5': '21.875rem',
+                '134.5': '33.625rem',
                 '277.5': '69.375rem',
             },
             colors: {
@@ -21,6 +23,7 @@ module.exports = {
                 'normal-text': '#3d3d3d',
                 'primary-query': '#007AFF',
                 'alternative-query': '#5AC8FA',
+                'itemLine': 'rgba(0, 0, 0, 0.15)',
             },
             screens: {
                 'sxl': '1200px',
